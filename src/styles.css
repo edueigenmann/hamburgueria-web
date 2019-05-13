@@ -1,0 +1,22 @@
+.tamanho {
+    width: 150px;
+    height: 100px;
+}
+
+.alinhar-div{
+    text-align: -webkit-center;
+}
+
+.alinhar-centro {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+    .centralizar {
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 10px;
+      }
+      

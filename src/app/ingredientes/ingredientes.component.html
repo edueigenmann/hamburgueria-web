@@ -1,0 +1,35 @@
+<div class="row" *ngIf="!exibirPedidoFinalizado">
+  <div class="alinhar-centro">
+    <table class="table table-responsive">
+      <thead>
+        <th>Ingrediente</th>
+        <th>Preço Adicional</th>
+        <th>Quantidade</th>
+        <th>Adicionar</th>
+        <th>Subtrair</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let d of listaIngredientes">
+          <td>{{d.descricao}}</td>
+          <td>R$ {{d.preco | currency}}</td>
+          <td>{{d.qtde}}</td>
+          <td>
+            <button class="btn btn-default" type="button" (click)="somaIngrediente(d, 'Soma')"><i class="fa fa-plus"
+                aria-hidden="true"></i></button>
+          </td>
+          <td>
+            <button class="btn btn-default" type="button" (click)="somaIngrediente(d, 'Subtrai')"><i class="fa fa-minus"
+                aria-hidden="true"></i></button>
+          </td>
+        </tr>
+      </tbody>
+      <label>Valor Total do Lanche: {{ valorLanche | currency }}</label>
+      <br />      
+      <input value="Finalizar Pedido" type="button" class="btn btn-primary" data-toggle="modal" (click)="finalizarPedido()"/>
+    </table>
+  </div>
+</div>
+
+<div class="row" *ngIf="exibirPedidoFinalizado">
+  <h5 class="alinhar-centro">Pedido Finalizado com Sucesso!</h5>
+</div>

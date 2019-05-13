@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="alinhar-centro">
+    <table class="table table-responsive">
+      <thead>
+        <th>Lanche</th>
+        <th>Ingredientes</th>
+        <th>Preço</th>
+        <th></th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let d of listaLanches">
+          <td>{{d.nomeLanche}}</td>
+          <td style="font-style: italic">{{d.ingredientes}}</td>
+          <td>R$ {{d.preco}}</td>
+          <!-- <td><button class="btn btn-primary" routerLink="/ingredientes">Quero Esse!</button></td> -->
+          <td><button class="btn btn-primary" (click)="goToPage(d)">Quero Esse!</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
