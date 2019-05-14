@@ -13,6 +13,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { LanchesService } from './lanches/lanches.service';
 import { FooterComponent } from './footer/footer.component';
+import { ContatoComponent } from './contato/contato.component';
+import { BoasVindasComponent } from './boas-vindas/boas-vindas.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     HeaderComponent,
     IngredientesComponent,
-    FooterComponent
+    FooterComponent,
+    ContatoComponent,
+    BoasVindasComponent
   ],
   imports: [
     BrowserModule,

@@ -3,7 +3,7 @@
     height: 100px;
 }
 
-.alinhar-div{
+.alinhar{
     text-align: -webkit-center;
 }
 
@@ -12,11 +12,15 @@
     margin-right: auto;
 }
 
+.centralizar {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
 
-    .centralizar {
-        margin: auto;
-        width: 50%;
-        border: 3px solid green;
-        padding: 10px;
-      }
-      
+.contato {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
